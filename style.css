@@ -1,0 +1,53 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 20px;
+}
+#main-container{
+    height:500px;
+    width: 400px;
+    border: 2px, solid, black;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#display{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    border: 2px, solid, black;
+    
+}
+
+.button-row{
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    border: 2px, solid, purple;
+    
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px, solid, salmon;
+    width: 100%;
+
+}
+
+.calculus{
+    background-color: #ACACAC;
+    flex: 1;
+    font-size: large;
+    
+}
+.result{
+    flex: 1;
+    justify-content: flex-end;
+    font-size: xx-large;
+    font-weight: bolder;
+}
