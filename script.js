@@ -25,9 +25,15 @@ document.addEventListener('click', (e) =>{
 
 equal.addEventListener('click', (e) =>{
 
-    operate(operator)
-    secondNum = ''
-    operator = ''
+    if(secondNum == false){
+        displayVar= 'Error'
+        resultDisplay.textContent = 'Error'
+    }else{
+        operate(operator)
+        secondNum = ''
+        operator = ''
+    }
+
 })
 
 
@@ -44,7 +50,6 @@ let resultVar = '';
 
 
 const operate = function(op){
-
    
     if(op == '+'){
         let result = add(parseInt(firstNum), parseInt(secondNum))
@@ -73,9 +78,7 @@ const operate = function(op){
 
 const add = function(a,b){
     
-    return a + b
-    
-    
+    return a + b 
 }
 
 const subtract = function(a,b){
